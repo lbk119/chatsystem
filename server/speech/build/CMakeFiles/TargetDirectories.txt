@@ -1,0 +1,8 @@
+/home/lbk/chatsystem/server/speech/build/CMakeFiles/speech_server.dir
+/home/lbk/chatsystem/server/speech/build/CMakeFiles/speech_client.dir
+/home/lbk/chatsystem/server/speech/build/CMakeFiles/edit_cache.dir
+/home/lbk/chatsystem/server/speech/build/CMakeFiles/rebuild_cache.dir
+/home/lbk/chatsystem/server/speech/build/CMakeFiles/list_install_components.dir
+/home/lbk/chatsystem/server/speech/build/CMakeFiles/install.dir
+/home/lbk/chatsystem/server/speech/build/CMakeFiles/install/local.dir
+/home/lbk/chatsystem/server/speech/build/CMakeFiles/install/strip.dir
