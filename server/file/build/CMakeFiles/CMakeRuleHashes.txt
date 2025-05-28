@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+8e3403e1d1a5c4aad01e33edefaeabfb base.pb.cc
+2269595593f3328e6deb8319357e5ee6 file.pb.cc
