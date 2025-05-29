@@ -1,6 +1,7 @@
 // 实现项目中一些公共的工具类接口
 // 1. 生成一个唯一ID的接口
 // 2. 文件的读写操作接口
+#pragma once
 #include <iostream>
 #include <sstream>
 #include <fstream>

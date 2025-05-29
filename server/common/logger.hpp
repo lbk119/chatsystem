@@ -52,3 +52,4 @@ namespace lbk
     {                                                                                                        \
         lbk::g_default_logger->critical(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
     }
+    
