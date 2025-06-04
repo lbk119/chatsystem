@@ -13,9 +13,15 @@ namespace lbk
         // 用户名--新增用户 -- 用户ID, 昵称，密码
         User(const std::string &uid, const std::string &nickname, const std::string &password)
             : _user_id(uid), _nickname(nickname), _password(password) {}
-        // 手机号--新增用户 -- 用户ID, 手机号, 随机昵称
-        User(const std::string &uid, const std::string &phone)
-            : _user_id(uid), _nickname(uid), _phone(phone) {}
+        // 手机号--新增用户 -- 用户ID, 手机号, 随机昵称,
+        User(const std::string &uid, const std::string &phone, const std::string &password, const std::string &nickname)
+            : _user_id(uid), _phone(phone), _password(password)
+        {
+            if (!nickname.empty())
+                _nickname = nickname;
+            else
+                _nickname = uid;
+        }
 
         void user_id(const std::string &val) { _user_id = val; }
         std::string user_id()
@@ -80,3 +86,4 @@ namespace lbk
         odb::nullable<std::string> _avatar_id; // 用户头像文件ID - 不一定存在
     };
 }
+// odb -d mysql --std c++11 --generate-query --generate-schema --profile boost/date-time user.hxx

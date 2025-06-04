@@ -26,30 +26,29 @@ namespace lbk
         }
         g_default_logger->set_pattern("[%n][%H:%M:%S][%t][%-8l]%v");
     }
-}
+#define LOG_TRACE(format, ...)                                                                       \
+    {                                                                                                \
+        g_default_logger->trace(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
+    }
+#define LOG_DEBUG(format, ...)                                                                       \
+    {                                                                                                \
+        g_default_logger->debug(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
+    }
+#define LOG_INFO(format, ...)                                                                       \
+    {                                                                                               \
+        g_default_logger->info(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
+    }
+#define LOG_WARN(format, ...)                                                                       \
+    {                                                                                               \
+        g_default_logger->warn(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
+    }
+#define LOG_ERROR(format, ...)                                                                       \
+    {                                                                                                \
+        g_default_logger->error(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
+    }
+#define LOG_CRITICAL(format, ...)                                                                       \
+    {                                                                                                   \
+        g_default_logger->critical(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
+    }
 
-#define LOG_TRACE(format, ...)                                                                            \
-    {                                                                                                     \
-        lbk::g_default_logger->trace(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
-    }
-#define LOG_DEBUG(format, ...)                                                                            \
-    {                                                                                                     \
-        lbk::g_default_logger->debug(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
-    }
-#define LOG_INFO(format, ...)                                                                            \
-    {                                                                                                    \
-        lbk::g_default_logger->info(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
-    }
-#define LOG_WARN(format, ...)                                                                            \
-    {                                                                                                    \
-        lbk::g_default_logger->warn(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
-    }
-#define LOG_ERROR(format, ...)                                                                            \
-    {                                                                                                     \
-        lbk::g_default_logger->error(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
-    }
-#define LOG_CRITICAL(format, ...)                                                                            \
-    {                                                                                                        \
-        lbk::g_default_logger->critical(std::string("[{}:{}]") + format, __FILE__, __LINE__, ##__VA_ARGS__); \
-    }
-    
+}

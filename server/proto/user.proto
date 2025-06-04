@@ -37,20 +37,22 @@ message UserLoginRsp {
 message PhoneVerifyCodeReq {
     string request_id = 1;
     string phone_number = 2;
+    string password = 3;
 }
 message PhoneVerifyCodeRsp {
     string request_id = 1;
     bool success = 2;
     string errmsg = 3;
-    string verify_code_id = 4;
+    optional string verify_code_id = 4;
 }
 //----------------------------
 //手机号注册
 message PhoneRegisterReq {
     string request_id = 1;
     string phone_number = 2;
-    string verify_code_id = 3;
-    string verify_code = 4;
+    optional string verify_code_id = 3;
+    optional string verify_code = 4;
+    string password = 5;
 }
 message PhoneRegisterRsp {
     string request_id = 1;
@@ -62,8 +64,9 @@ message PhoneRegisterRsp {
 message PhoneLoginReq {
     string request_id = 1;
     string phone_number = 2;
-    string verify_code_id = 3;
-    string verify_code = 4;
+    optional string verify_code_id = 3;
+    optional string verify_code = 4;
+    string password = 5;
 }
 message PhoneLoginRsp {
     string request_id = 1;

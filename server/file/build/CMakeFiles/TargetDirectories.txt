@@ -1,8 +1,0 @@
-/home/lbk/chatsystem/server/file/build/CMakeFiles/file_server.dir
-/home/lbk/chatsystem/server/file/build/CMakeFiles/file_client.dir
-/home/lbk/chatsystem/server/file/build/CMakeFiles/edit_cache.dir
-/home/lbk/chatsystem/server/file/build/CMakeFiles/rebuild_cache.dir
-/home/lbk/chatsystem/server/file/build/CMakeFiles/list_install_components.dir
-/home/lbk/chatsystem/server/file/build/CMakeFiles/install.dir
-/home/lbk/chatsystem/server/file/build/CMakeFiles/install/local.dir
-/home/lbk/chatsystem/server/file/build/CMakeFiles/install/strip.dir
