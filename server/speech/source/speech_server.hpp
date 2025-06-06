@@ -1,4 +1,5 @@
 // 实现语音识别子服务
+#pragma once
 #include <brpc/server.h>
 #include <butil/logging.h>
 

@@ -73,6 +73,7 @@
         "any": "cpp",
         "codecvt": "cpp",
         "forward_list": "cpp",
-        "cfenv": "cpp"
+        "cfenv": "cpp",
+        "*.txx": "cpp"
     }
 }

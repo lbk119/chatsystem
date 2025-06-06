@@ -2,6 +2,7 @@
 // 1. 实现文件rpc服务类 --- 实现rpc调用的业务处理接口
 // 2. 实现用户管理子服务的服务器类
 // 3. 实现用户管理子服务类的构造者
+#pragma once
 #include <brpc/server.h>
 #include <butil/logging.h>
 

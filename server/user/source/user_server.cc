@@ -42,7 +42,6 @@ int main(int argc, char *argv[])
                           FLAGS_mysql_db, FLAGS_mysql_cset, FLAGS_mysql_port, FLAGS_mysql_conn_pool_count);
     usb.make_redis_object(FLAGS_redis_host, FLAGS_redis_port, FLAGS_redis_db, FLAGS_redis_keep_alive);
     usb.make_discovery_object(FLAGS_registry_host, FLAGS_base_service, FLAGS_file_service);
-    std::this_thread::sleep_for(std::chrono::seconds(3));
     usb.make_rpc_object(FLAGS_listen_port, FLAGS_rpc_timeout, FLAGS_rpc_threads);
     usb.make_registry_object(FLAGS_registry_host, FLAGS_base_service + FLAGS_instance_name, FLAGS_access_host);
     auto server = usb.build();
