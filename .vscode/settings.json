@@ -74,6 +74,7 @@
         "codecvt": "cpp",
         "forward_list": "cpp",
         "cfenv": "cpp",
-        "*.txx": "cpp"
+        "*.txx": "cpp",
+        "strstream": "cpp"
     }
 }

@@ -15,7 +15,7 @@ namespace lbk
             : _session_id(ssid), _user_id(uid)
         {
         }
-        std::string session_id()
+        std::string session_id() const
         {
             return _session_id;
         }
@@ -24,7 +24,7 @@ namespace lbk
             _session_id = ssid;
         }
 
-        std::string user_id()
+        std::string user_id() const
         {
             return _user_id;
         }

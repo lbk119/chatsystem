@@ -213,7 +213,7 @@ namespace lbk
             Json::Value field;
             field[key] = val;
             Json::Value term;
-            term["terms"] = field;
+            term["term"] = field;
             _must.append(term);
             return *this;
         }

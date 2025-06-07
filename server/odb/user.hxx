@@ -24,13 +24,13 @@ namespace lbk
         }
 
         void user_id(const std::string &val) { _user_id = val; }
-        std::string user_id()
+        std::string user_id() const
         {
             return _user_id;
         }
 
         void nickname(const std::string &val) { _nickname = val; }
-        std::string nickname()
+        std::string nickname() const
         {
             if (_nickname)
                 return *_nickname;
@@ -38,7 +38,7 @@ namespace lbk
         }
 
         void description(const std::string &val) { _description = val; }
-        std::string description()
+        std::string description() const
         {
             if (_description)
                 return *_description;
@@ -46,7 +46,7 @@ namespace lbk
         }
 
         void password(const std::string &val) { _password = val; }
-        std::string password()
+        std::string password() const
         {
             if (_password)
                 return *_password;
@@ -54,7 +54,7 @@ namespace lbk
         }
 
         void phone(const std::string &val) { _phone = val; }
-        std::string phone()
+        std::string phone() const
         {
             if (_phone)
                 return *_phone;
@@ -62,7 +62,7 @@ namespace lbk
         }
 
         void avatar_id(const std::string &val) { _avatar_id = val; }
-        std::string avatar_id()
+        std::string avatar_id() const
         {
             if (_avatar_id)
                 return *_avatar_id;
