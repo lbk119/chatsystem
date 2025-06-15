@@ -1,3 +1,4 @@
+#pragma once
 #include <sw/redis++/redis++.h>
 #include <iostream>
 

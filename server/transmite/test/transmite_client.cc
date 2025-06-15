@@ -16,7 +16,7 @@ DEFINE_string(transmite_service, "/service/transmite_service", "服务监控根�
 
 std::shared_ptr<lbk::ServiceManager> sm;
 
-void send(const std::string &uid, const std::string &chat_ssid, const std::string &msg)
+void string_message(const std::string &uid, const std::string &chat_ssid, const std::string &msg)
 {
     auto channel = sm->choose(FLAGS_transmite_service);
     if (!channel)
@@ -39,6 +39,76 @@ void send(const std::string &uid, const std::string &chat_ssid, const std::strin
     ASSERT_TRUE(rsp.success());
 }
 
+void image_message(const std::string &uid, const std::string &chat_ssid, const std::string &msg)
+{
+    auto channel = sm->choose(FLAGS_transmite_service);
+    if (!channel)
+    {
+        std::cout << "获取通信信道失败！" << std::endl;
+        return;
+    }
+
+    lbk::NewMessageReq req;
+    req.set_request_id(lbk::uuid());
+    req.set_user_id(uid);
+    req.set_chat_session_id(chat_ssid);
+    req.mutable_message()->set_message_type(lbk::MessageType::IMAGE);
+    req.mutable_message()->mutable_image_message()->set_image_content(msg);
+    lbk::MsgTransmitService_Stub stub(channel.get());
+    lbk::GetTransmitTargetRsp rsp;
+    brpc::Controller cntl;
+    stub.GetTransmitTarget(&cntl, &req, &rsp, nullptr);
+    ASSERT_FALSE(cntl.Failed());
+    ASSERT_TRUE(rsp.success());
+}
+
+void speech_message(const std::string &uid, const std::string &chat_ssid, const std::string &msg)
+{
+    auto channel = sm->choose(FLAGS_transmite_service);
+    if (!channel)
+    {
+        std::cout << "获取通信信道失败！" << std::endl;
+        return;
+    }
+
+    lbk::NewMessageReq req;
+    req.set_request_id(lbk::uuid());
+    req.set_user_id(uid);
+    req.set_chat_session_id(chat_ssid);
+    req.mutable_message()->set_message_type(lbk::MessageType::SPEECH);
+    req.mutable_message()->mutable_speech_message()->set_file_contents(msg);
+    lbk::MsgTransmitService_Stub stub(channel.get());
+    lbk::GetTransmitTargetRsp rsp;
+    brpc::Controller cntl;
+    stub.GetTransmitTarget(&cntl, &req, &rsp, nullptr);
+    ASSERT_FALSE(cntl.Failed());
+    ASSERT_TRUE(rsp.success());
+}
+
+void file_message(const std::string &uid, const std::string &chat_ssid, const std::string &file_name,const std::string &content)
+{
+    auto channel = sm->choose(FLAGS_transmite_service);
+    if (!channel)
+    {
+        std::cout << "获取通信信道失败！" << std::endl;
+        return;
+    }
+
+    lbk::NewMessageReq req;
+    req.set_request_id(lbk::uuid());
+    req.set_user_id(uid);
+    req.set_chat_session_id(chat_ssid);
+    req.mutable_message()->set_message_type(lbk::MessageType::FILE);
+    req.mutable_message()->mutable_file_message()->set_file_contents(content);
+    req.mutable_message()->mutable_file_message()->set_file_name(file_name);
+    req.mutable_message()->mutable_file_message()->set_file_size(content.size());
+    lbk::MsgTransmitService_Stub stub(channel.get());
+    lbk::GetTransmitTargetRsp rsp;
+    brpc::Controller cntl;
+    stub.GetTransmitTarget(&cntl, &req, &rsp, nullptr);
+    ASSERT_FALSE(cntl.Failed());
+    ASSERT_TRUE(rsp.success());
+}
 int main(int argc, char *argv[])
 {
     google::ParseCommandLineFlags(&argc, &argv, true);
@@ -50,6 +120,10 @@ int main(int argc, char *argv[])
     auto del_cb = std::bind(&lbk::ServiceManager::onServiceOffline, sm.get(), std::placeholders::_1, std::placeholders::_2);
 
     lbk::Discovery::ptr dclient = std::make_shared<lbk::Discovery>(FLAGS_etcd_host, FLAGS_base_service, put_cb, del_cb);
-    send("用户ID1","会话ID1","今天吃饭了吗？");
+    string_message("用户ID1","会话ID1","今天吃饭了吗？");
+    string_message("用户ID2","会话ID1","吃了广式烧腊！！");
+    image_message("用户ID1","会话ID1","调皮的柴犬图片数据");
+    speech_message("用户ID1","会话ID1","哼哼的猪叫声数据");
+    file_message("用户ID1","会话ID1","乔治的文件名称","乔治的文件数据");
     return 0;
 }

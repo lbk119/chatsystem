@@ -82,7 +82,7 @@ namespace lbk
         {
             LOG_DEBUG("开始订阅 {} 队列消息！", queue);
             _channel->consume(queue, "consume-tags")
-                .onReceived([this, &cb](const AMQP::Message &message, uint32_t deliveryTag, bool redelivered)
+                .onReceived([this, cb](const AMQP::Message &message, uint32_t deliveryTag, bool redelivered)
                             {
             cb(message.body(),message.bodySize());
             _channel->ack(deliveryTag); })
