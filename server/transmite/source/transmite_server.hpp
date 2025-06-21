@@ -1,5 +1,4 @@
 // 实现消息转发服务
-#pragma once
 #include <brpc/server.h>
 #include <butil/logging.h>
 
