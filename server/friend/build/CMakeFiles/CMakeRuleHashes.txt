@@ -1,0 +1,9 @@
+# Hashes of file build rules.
+d58d58495a723509311b57820ebb5ec7 base.pb.cc
+528d6e17e70292c200ffc06381fcd686 chat_session-odb.cxx
+0c81af4ebb7c7221c745df6fe2d48f8b chat_session_member-odb.cxx
+d00f29a3c2305dfcfddcb3dc8abc8837 friend.pb.cc
+598d3821e0364377967f0dc429c11525 friend_apply-odb.cxx
+012cef042c131f259d24acdaa3924bc9 message.pb.cc
+8bd571307278b83f84650dd98d379d9a relation-odb.cxx
+1a0aac073c6580b007feb3ad983956ce user.pb.cc

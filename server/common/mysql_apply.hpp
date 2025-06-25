@@ -63,9 +63,9 @@ namespace lbk
             return ret;
         }
         // 获取当前指定用户的所有好友申请者ID
-        std::vector<std::string> applyUsers(const std::string &uid)
+        std::unordered_set<std::string> applyUsers(const std::string &uid)
         {
-            std::vector<std::string> ret;
+            std::unordered_set<std::string> ret;
             try
             {
                 odb::transaction trans(_db->begin());
@@ -75,7 +75,7 @@ namespace lbk
                 result r = _db->query<FriendApply>(query::peer_id == uid);
                 for (auto it = r.begin(); it != r.end(); it++)
                 {
-                    ret.push_back(it->user_id());
+                    ret.insert(it->user_id());
                 }
                 trans.commit();
             }

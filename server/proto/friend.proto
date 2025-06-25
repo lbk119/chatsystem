@@ -43,13 +43,13 @@ message FriendAddRsp {
     string request_id = 1;
     bool success = 2;
     string errmsg = 3; 
-    string notify_event_id = 4;//通知事件id
+    optional string notify_event_id = 4;//通知事件id
 }
 //--------------------------------------
 //好友申请的处理
 message FriendAddProcessReq {
     string request_id = 1;
-    string notify_event_id = 2;//通知事件id
+    optional string notify_event_id = 2;//通知事件id
     bool agree = 3;//是否同意好友申请
     string apply_user_id = 4; //申请人的用户id
     optional string session_id = 5;
@@ -140,7 +140,7 @@ message GetChatSessionMemberRsp {
     bool success = 2;
     string errmsg = 3; 
     repeated UserInfo member_info_list = 4;
-}
+} 
 
 service FriendService {
     rpc GetFriendList(GetFriendListReq) returns (GetFriendListRsp);

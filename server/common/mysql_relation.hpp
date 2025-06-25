@@ -71,9 +71,9 @@ namespace lbk
             return ret;
         }
         // 获取指定用户的好友ID
-        std::vector<std::string> friends(const std::string &uid)
+        std::unordered_set<std::string> friends(const std::string &uid)
         {
-            std::vector<std::string> ret;
+            std::unordered_set<std::string> ret;
             try
             {
                 odb::transaction trans(_db->begin());
@@ -82,7 +82,7 @@ namespace lbk
                 result r = _db->query<Relation>(query::user_id == uid);
                 for (auto it = r.begin(); it != r.end(); it++)
                 {
-                    ret.push_back(it->peer_id());
+                    ret.insert(it->peer_id());
                 }
                 trans.commit();
             }

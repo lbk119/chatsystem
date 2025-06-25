@@ -114,7 +114,7 @@ namespace lbk
                 return err_response("Mysql数据库新增数据失败!");
             }
             // 6. 向 ES 服务器中新增用户信息
-            ret = _es_user->appendData(uid, "", nickname, "", "");
+            ret = _es_user->appendData(uid, "", nickname, "", ""); 
             if (ret == false)
             {
                 LOG_ERROR("{} - ES搜索引擎新增数据失败！", request->request_id());

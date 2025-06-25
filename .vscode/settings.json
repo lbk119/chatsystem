@@ -75,6 +75,8 @@
         "forward_list": "cpp",
         "cfenv": "cpp",
         "*.txx": "cpp",
-        "strstream": "cpp"
-    }
+        "strstream": "cpp",
+        "*.inc": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/lbk/chatsystem/server"
 }

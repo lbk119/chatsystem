@@ -120,10 +120,10 @@ int main(int argc, char *argv[])
     auto del_cb = std::bind(&lbk::ServiceManager::onServiceOffline, sm.get(), std::placeholders::_1, std::placeholders::_2);
 
     lbk::Discovery::ptr dclient = std::make_shared<lbk::Discovery>(FLAGS_etcd_host, FLAGS_base_service, put_cb, del_cb);
-    string_message("用户ID1","会话ID1","今天吃饭了吗？");
-    string_message("用户ID2","会话ID1","吃了广式烧腊！！");
-    image_message("用户ID1","会话ID1","调皮的柴犬图片数据");
-    speech_message("用户ID1","会话ID1","哼哼的猪叫声数据");
-    file_message("用户ID1","会话ID1","乔治的文件名称","乔治的文件数据");
+    // string_message("用户ID1","会话ID1","今天吃饭了吗？");
+    // string_message("用户ID2","会话ID1","吃了广式烧腊！！");
+    // image_message("用户ID1","会话ID1","调皮的柴犬图片数据");
+    // speech_message("用户ID1","会话ID1","哼哼的猪叫声数据");
+    file_message("8ab0-fedce86b-0002","56b3-6f5ce3bd-0000","猪爸爸的文件名称","猪爸爸的文件数据");
     return 0;
 }

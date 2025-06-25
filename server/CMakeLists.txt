@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1.3)
 project(all_test)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/file)
-#add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/friend)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/friend)
 #add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/gateway)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/message)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/speech)
