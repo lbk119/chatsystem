@@ -5,7 +5,7 @@ project(user_server)
 
 set(target "user_server")
 set(test_client "user_client")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
 
 # 3. 检测并生成Protobuf框架代码
 #   3.1. 添加所需的proto映射代码文件名称

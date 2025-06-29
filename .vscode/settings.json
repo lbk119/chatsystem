@@ -76,7 +76,9 @@
         "cfenv": "cpp",
         "*.txx": "cpp",
         "strstream": "cpp",
-        "*.inc": "cpp"
+        "*.inc": "cpp",
+        "coroutine": "cpp",
+        "source_location": "cpp"
     },
     "cmake.sourceDirectory": "/home/lbk/chatsystem/server"
 }

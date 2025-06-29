@@ -46,7 +46,7 @@ message FriendAddRsp {
     optional string notify_event_id = 4;//通知事件id
 }
 //--------------------------------------
-//好友申请的处理
+//好友申请的处理 
 message FriendAddProcessReq {
     string request_id = 1;
     optional string notify_event_id = 2;//通知事件id

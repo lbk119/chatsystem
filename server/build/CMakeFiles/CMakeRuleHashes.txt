@@ -1,0 +1,25 @@
+# Hashes of file build rules.
+f990d5acf3e6a340ef20a5afb653bfca file/base.pb.cc
+c4c8e4c6583e05729bcf0355803dbaa2 file/file.pb.cc
+9af3694ef38d573816b9800c7e4fbd8c friend/base.pb.cc
+ec95de05f8bac36ab98b3d2a8a20a07d friend/chat_session-odb.cxx
+54f80f6bf002a3a3949e78d37d89a269 friend/chat_session_member-odb.cxx
+4a8cc82aad7b19db6fbc5734b7fd592a friend/friend.pb.cc
+c3be9cb6193cb01cf5dec3ee3a506baa friend/friend_apply-odb.cxx
+93e29695ed2d3654c344195551452862 friend/message.pb.cc
+822df6b040e86bf80973468240d59df5 friend/relation-odb.cxx
+18437baa41c355a34d2409c703f01b62 friend/user.pb.cc
+acf7641f42e686519ce5a4dd29111558 message/base.pb.cc
+b8e498f301a975a5c5351414657543fe message/file.pb.cc
+b1a8e7669d4a762198f9b029acc7ab96 message/message-odb.cxx
+633d0f51a328a15553ca7e58aa861fae message/message.pb.cc
+a27ce9762e0b09dd929a27ada515853c message/user.pb.cc
+7ef76ecc8c9d3ec1723504554e0716a3 speech/speech.pb.cc
+43ec54049aa724effbd1ea361937d2dc transmite/base.pb.cc
+0358ceac2460c4cad3b776d8fea24826 transmite/chat_session_member-odb.cxx
+45f02d5be536b753947fa323fe0450fa transmite/transmite.pb.cc
+560bf3e4263dbfd190ef2143cb71e8d4 transmite/user.pb.cc
+17c9e27c284d1e0dd6e38627b1fdf4d2 user/base.pb.cc
+63bd0edb62e024f8ff4197c3744b530b user/file.pb.cc
+41e7e1396c2ecaaa7de8a436e0c396af user/user-odb.cxx
+e588875efd80239e57791c414f6ea911 user/user.pb.cc

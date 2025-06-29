@@ -47,7 +47,7 @@ message ClientAuthenticationReq {
         发送单个文件                    /service/file/put_single_file
         发送多个文件                    /service/file/put_multi_file
 
-        语音转文字                     /service/speech/recognition
+        语音转文字                      /service/speech/recognition
     }
     
 */
