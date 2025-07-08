@@ -1361,6 +1361,7 @@ namespace lbk
         }
         void SpeechRecognition(const httplib::Request &request, httplib::Response &response)
         {
+            LOG_DEBUG("收到语音识别请求！！");
             // 1. 取出http请求正文，将正文进行反序列化
             SpeechRecognitionReq req;
             SpeechRecognitionRsp rsp;
@@ -1431,7 +1432,7 @@ namespace lbk
             }
             req.set_user_id(*uid);
             // 3. 将请求转发给消息转发子服务进行业务处理
-            auto channel = _mm_channels->choose(_friend_service_name);
+            auto channel = _mm_channels->choose(_transmite_service_name);
             if (!channel)
             {
                 LOG_ERROR("{} 未找到可提供业务处理的消息转发子服务节点！", req.request_id());

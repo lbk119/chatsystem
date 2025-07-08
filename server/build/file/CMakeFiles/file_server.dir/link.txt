@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/file_server.dir/source/file_server.cc.o CMakeFiles/file_server.dir/base.pb.cc.o CMakeFiles/file_server.dir/file.pb.cc.o -o file_server  -lgflags -lspdlog -lfmt -lbrpc -lssl -lcrypto -lprotobuf -lleveldb -letcd-cpp-api -lcpprest -lcurl /usr/lib/x86_64-linux-gnu/libjsoncpp.so.19 

@@ -57,7 +57,7 @@ namespace lbk
             {
                 if (!((password[i] > 'a' && password[i] < 'z') ||
                       (password[i] > 'A' && password[i] < 'Z') ||
-                      (password[i] > '0' && password[i] < '9') ||
+                      (password[i] >= '0' && password[i] <= '9') ||
                       password[i] == '_' || password[i] == '-' || password[i] == '.'))
                 {
                     LOG_ERROR("密码字符不合法：{}", password);
@@ -148,7 +148,7 @@ namespace lbk
                 return err_response("用户名或密码错误!");
             }
             // 3. 根据 redis 中的登录标记信息是否存在判断用户是否已经登录
-            bool ret = _redis_status->exists(request->request_id());
+            bool ret = _redis_status->exists(user->user_id());
             if (ret)
             {
                 LOG_ERROR("{} - 用户已在其他地方登录 - {}！", request->request_id(), nickname);
@@ -156,9 +156,9 @@ namespace lbk
             }
             // 4. 构造会话 ID，生成会话键值对，向 redis 中添加会话信息以及登录标记信息
             std::string ssid = uuid();
-            _redis_session->append(ssid, request->request_id());
+            _redis_session->append(ssid, user->user_id());
             // 5. 添加用户登录信息
-            _redis_status->append(request->request_id());
+            _redis_status->append(user->user_id());
             // 6. 组织响应，返回生成的会话 ID
             response->set_success(true);
             response->set_login_session_id(ssid);
