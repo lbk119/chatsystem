@@ -1,0 +1,466 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/cl.exe 
+      Build flags: -DQT_QML_DEBUG
+      Id flags:  
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.36.32537 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.36.32537.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/4.0.0-rc2/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1281 (message)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  D:\\桌面\\课件\\C+++-+微服务的即时通讯系统-课件\\C++ - 微服务的即时通讯系统-课件\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:81 (try_compile)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-k7hnfb"
+      binary: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-k7hnfb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-k7hnfb'
+        
+        Run Build Command(s): D:/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_31ac7/fast
+        D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_31ac7.dir\\build.make CMakeFiles/cmTC_31ac7.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-k7hnfb'
+        Building CXX object CMakeFiles/cmTC_31ac7.dir/CMakeCXXCompilerABI.cpp.obj
+        D:\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_31ac7.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-k7hnfb" --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1436~1.325\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_31ac7.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_31ac7.dir/ /FS -c D:\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_31ac7.dir\\build.make:81: CMakeFiles/cmTC_31ac7.dir/CMakeCXXCompilerABI.cpp.obj] Error 2
+        mingw32-make.exe[1]: Leaving directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-k7hnfb'
+        mingw32-make.exe: *** [Makefile:133: cmTC_31ac7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/cl.exe"
+    directories:
+      source: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-yu1eyg"
+      binary: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-yu1eyg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-yu1eyg'
+        
+        Run Build Command(s): D:/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_8b83d/fast
+        D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8b83d.dir\\build.make CMakeFiles/cmTC_8b83d.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-yu1eyg'
+        Building CXX object CMakeFiles/cmTC_8b83d.dir/testCXXCompiler.cxx.obj
+        D:\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_8b83d.dir\\testCXXCompiler.cxx.obj.d --working-dir="D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-yu1eyg" --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1436~1.325\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_8b83d.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_8b83d.dir/ /FS -c "D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-yu1eyg\\testCXXCompiler.cxx"
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_8b83d.dir\\build.make:81: CMakeFiles/cmTC_8b83d.dir/testCXXCompiler.cxx.obj] Error 2
+        mingw32-make.exe[1]: Leaving directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-yu1eyg'
+        mingw32-make.exe: *** [Makefile:133: cmTC_8b83d/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/cl.exe 
+      Build flags: -DQT_QML_DEBUG;/DWIN32;/D_WINDOWS;/GR;/EHsc
+      Id flags:  
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.36.32537 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.36.32537.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/4.0.0-rc2/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1281 (message)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  D:\\桌面\\课件\\C+++-+微服务的即时通讯系统-课件\\C++ - 微服务的即时通讯系统-课件\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:81 (try_compile)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-34cs4k"
+      binary: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-34cs4k"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-34cs4k'
+        
+        Run Build Command(s): D:/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_869a4/fast
+        D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_869a4.dir\\build.make CMakeFiles/cmTC_869a4.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-34cs4k'
+        Building CXX object CMakeFiles/cmTC_869a4.dir/CMakeCXXCompilerABI.cpp.obj
+        D:\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_869a4.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-34cs4k" --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1436~1.325\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_869a4.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_869a4.dir/ /FS -c D:\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_869a4.dir\\build.make:81: CMakeFiles/cmTC_869a4.dir/CMakeCXXCompilerABI.cpp.obj] Error 2
+        mingw32-make.exe[1]: Leaving directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-34cs4k'
+        mingw32-make.exe: *** [Makefile:133: cmTC_869a4/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/cl.exe"
+    directories:
+      source: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-e452u8"
+      binary: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-e452u8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-e452u8'
+        
+        Run Build Command(s): D:/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_a54e5/fast
+        D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a54e5.dir\\build.make CMakeFiles/cmTC_a54e5.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-e452u8'
+        Building CXX object CMakeFiles/cmTC_a54e5.dir/testCXXCompiler.cxx.obj
+        D:\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_a54e5.dir\\testCXXCompiler.cxx.obj.d --working-dir="D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-e452u8" --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1436~1.325\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a54e5.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_a54e5.dir/ /FS -c "D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-e452u8\\testCXXCompiler.cxx"
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_a54e5.dir\\build.make:81: CMakeFiles/cmTC_a54e5.dir/testCXXCompiler.cxx.obj] Error 2
+        mingw32-make.exe[1]: Leaving directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-e452u8'
+        mingw32-make.exe: *** [Makefile:133: cmTC_a54e5/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/cl.exe 
+      Build flags: -DQT_QML_DEBUG;/DWIN32;/D_WINDOWS;/GR;/EHsc
+      Id flags:  
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.36.32537 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.36.32537.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/4.0.0-rc2/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1281 (message)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  D:\\桌面\\课件\\C+++-+微服务的即时通讯系统-课件\\C++ - 微服务的即时通讯系统-课件\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:81 (try_compile)"
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-35zasp"
+      binary: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-35zasp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-35zasp'
+        
+        Run Build Command(s): D:/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_61a2a/fast
+        D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_61a2a.dir\\build.make CMakeFiles/cmTC_61a2a.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-35zasp'
+        Building CXX object CMakeFiles/cmTC_61a2a.dir/CMakeCXXCompilerABI.cpp.obj
+        D:\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_61a2a.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-35zasp" --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1436~1.325\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_61a2a.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_61a2a.dir/ /FS -c D:\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_61a2a.dir\\build.make:81: CMakeFiles/cmTC_61a2a.dir/CMakeCXXCompilerABI.cpp.obj] Error 2
+        mingw32-make.exe[1]: Leaving directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-35zasp'
+        mingw32-make.exe: *** [Makefile:133: cmTC_61a2a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/cl.exe"
+    directories:
+      source: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-ycwfha"
+      binary: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-ycwfha"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-ycwfha'
+        
+        Run Build Command(s): D:/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_0a0cd/fast
+        D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0a0cd.dir\\build.make CMakeFiles/cmTC_0a0cd.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-ycwfha'
+        Building CXX object CMakeFiles/cmTC_0a0cd.dir/testCXXCompiler.cxx.obj
+        D:\\CMake\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_0a0cd.dir\\testCXXCompiler.cxx.obj.d --working-dir="D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ycwfha" --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1436~1.325\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_0a0cd.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_0a0cd.dir/ /FS -c "D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ycwfha\\testCXXCompiler.cxx"
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_0a0cd.dir\\build.make:81: CMakeFiles/cmTC_0a0cd.dir/testCXXCompiler.cxx.obj] Error 2
+        mingw32-make.exe[1]: Leaving directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-ycwfha'
+        mingw32-make.exe: *** [Makefile:133: cmTC_0a0cd/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/cl.exe 
+      Build flags: -DQT_QML_DEBUG;/DWIN32;/D_WINDOWS;/GR;/EHsc
+      Id flags:  
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.36.32537 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.36.32537.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1243 (message)"
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  D:\\桌面\\课件\\C+++-+微服务的即时通讯系统-课件\\C++ - 微服务的即时通讯系统-课件\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-glejvo"
+      binary: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-glejvo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-glejvo'
+        
+        Run Build Command(s): D:/Qt/Tools/CMake_64/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_e6c8e/fast
+        D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_e6c8e.dir\\build.make CMakeFiles/cmTC_e6c8e.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-glejvo'
+        Building CXX object CMakeFiles/cmTC_e6c8e.dir/CMakeCXXCompilerABI.cpp.obj
+        D:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_e6c8e.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-glejvo" --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1436~1.325\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e6c8e.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_e6c8e.dir/ /FS -c D:\\Qt\\Tools\\CMake_64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_e6c8e.dir\\build.make:78: CMakeFiles/cmTC_e6c8e.dir/CMakeCXXCompilerABI.cpp.obj] Error 2
+        mingw32-make.exe[1]: Leaving directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-glejvo'
+        mingw32-make.exe: *** [Makefile:126: cmTC_e6c8e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/HostX64/x64/cl.exe"
+    directories:
+      source: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-1sq1l3"
+      binary: "D:/\u684c\u9762/\u8bfe\u4ef6/C+++-+\u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/C++ - \u5fae\u670d\u52a1\u7684\u5373\u65f6\u901a\u8baf\u7cfb\u7edf-\u8bfe\u4ef6/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-1sq1l3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-1sq1l3'
+        
+        Run Build Command(s): D:/Qt/Tools/CMake_64/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_4d21a/fast
+        D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4d21a.dir\\build.make CMakeFiles/cmTC_4d21a.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-1sq1l3'
+        Building CXX object CMakeFiles/cmTC_4d21a.dir/testCXXCompiler.cxx.obj
+        D:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_4d21a.dir\\testCXXCompiler.cxx.obj.d --working-dir="D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1sq1l3" --filter-prefix="娉ㄦ剰: 鍖呭惈鏂囦欢:  " -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1436~1.325\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4d21a.dir\\testCXXCompiler.cxx.obj /FdCMakeFiles\\cmTC_4d21a.dir/ /FS -c "D:\\妗岄潰\\璇句欢\\C+++-+寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\C++ - 寰湇鍔＄殑鍗虫椂閫氳绯荤粺-璇句欢\\cpp-chatsystem-master\\code\\client\\ChatClient\\build\\unknown-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1sq1l3\\testCXXCompiler.cxx"
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_4d21a.dir\\build.make:78: CMakeFiles/cmTC_4d21a.dir/testCXXCompiler.cxx.obj] Error 2
+        mingw32-make.exe[1]: Leaving directory 'D:/桌面/课件/C+++-+微服务的即时通讯系统-课件/C++ - 微服务的即时通讯系统-课件/cpp-chatsystem-master/code/client/ChatClient/build/unknown-Debug/CMakeFiles/CMakeScratch/TryCompile-1sq1l3'
+        mingw32-make.exe: *** [Makefile:126: cmTC_4d21a/fast] Error 2
+        
+      exitCode: 2
+...
