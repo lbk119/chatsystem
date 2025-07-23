@@ -113,5 +113,280 @@
 - **自动化部署与健康监控**
 
 ---
+## 七、开发环境配置说明
 
+### 基础工具安装
+
+#### 编辑器安装
+```bash
+sudo apt-get install vim
+```
+
+#### 编译器安装
+```bash
+sudo apt-get install gcc g++
+```
+
+#### 调试器安装
+```bash
+sudo apt-get install gdb
+```
+
+#### 项目构建工具安装
+```bash
+sudo apt-get install make cmake
+```
+
+#### 文件传输工具安装
+```bash
+sudo apt-get install lrzsz
+```
+
+#### 版本管理工具安装
+```bash
+sudo apt-get install git
+```
+
+---
+
+### 常用 C++ 框架安装
+
+#### gflags 框架
+```bash
+sudo apt-get install libgflags-dev
+```
+
+#### gtest 框架
+```bash
+sudo apt-get install libgtest-dev
+```
+
+#### spdlog 框架
+```bash
+sudo apt-get install libspdlog-dev
+```
+
+#### brpc 框架
+先安装依赖：
+```bash
+sudo apt-get install -y git g++ make libssl-dev libprotobuf-dev libprotoc-dev protobuf-compiler libleveldb-dev
+```
+安装 brpc：
+```bash
+git clone https://github.com/apache/brpc.git
+cd brpc/
+mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+cmake --build . -j6
+make && sudo make install
+```
+
+#### etcd 框架
+安装 etcd 服务端：
+```bash
+sudo apt-get install etcd
+sudo systemctl start etcd
+sudo systemctl enable etcd
+```
+安装 etcd-cpp-apiv3 客户端：
+```bash
+sudo apt-get install libboost-all-dev
+sudo apt-get install protobuf-compiler-grpc
+sudo apt-get install libgrpc-dev libgrpc++-dev
+sudo apt-get install libcpprest-dev
+git clone https://github.com/etcd-cpp-apiv3/etcd-cpp-apiv3.git
+cd etcd-cpp-apiv3
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make -j$(nproc) && sudo make install
+```
+
+#### elasticsearch 框架
+安装 elasticsearch：
+```bash
+curl -s https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/icsearch.gpg --import
+echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elasticsearch.list
+sudo apt update
+sudo apt-get install elasticsearch=7.17.21
+```
+安装中文分词插件：
+```bash
+sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install https://get.infini.cloud/elasticsearch/analysis-ik/7.17.21
+```
+修改 elasticsearch 配置监听地址，启用外部访问：
+```
+sudo vim /etc/elasticsearch/elasticsearch.yml
+# 设置 network.host: 0.0.0.0
+# 设置 http.port: 9200
+```
+启动并设置开机启动：
+```bash
+sudo systemctl restart elasticsearch
+sudo systemctl enable elasticsearch
+sudo systemctl status elasticsearch
+```
+安装 kibana（页面工具）：
+```bash
+sudo apt install kibana
+sudo vim /etc/kibana/kibana.yml
+# server.port: 5601
+# server.host: "0.0.0.0"
+# elasticsearch.hosts: ["http://localhost:9200"]
+sudo systemctl start kibana
+sudo systemctl enable kibana
+sudo systemctl status kibana
+```
+通过 kibana 访问并测试索引创建：http://<服务器IP>:5601/
+
+安装 elasticsearch 客户端 API：
+```bash
+sudo apt-get install libmicrohttpd-dev
+git clone https://github.com/seznam/elasticlient.git
+cd elasticlient
+git submodule update --init --recursive
+mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+make && sudo make install
+```
+
+---
+
+#### cpp-httplib 框架
+```bash
+git clone https://github.com/yhirose/cpp-httplib.git
+```
+
+#### websocketpp 框架
+查看是否已安装：
+```bash
+ls /usr/include/websocketpp/
+```
+如未安装：
+```bash
+sudo apt-get install libwebsocketpp-dev
+```
+
+---
+
+#### Redis 安装与配置
+安装 Redis：
+```bash
+sudo apt install redis -y
+```
+修改 /etc/redis/redis.conf，支持远程连接：
+- 注释掉 `bind 127.0.0.1`
+- 添加 `bind 0.0.0.0`
+- 修改 `protected-mode yes` 为 `protected-mode no`
+启动并设置开机启动：
+```bash
+sudo systemctl start redis-server
+sudo systemctl enable redis-server
+```
+安装客户端 SDK：
+```bash
+sudo apt install libhiredis-dev
+git clone https://github.com/sewenew/redis-plus-plus.git
+cd redis-plus-plus
+mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+make && sudo make install
+```
+
+---
+
+#### ODB 安装
+安装 build2（耗时较长）：
+```bash
+curl -sSfO https://download.build2.org/0.17.0/build2-install-0.17.0.sh
+sh build2-install-0.17.0.sh
+```
+安装 odb-compiler 及相关库（gcc 版本需与实际环境一致）：
+```bash
+sudo apt-get install gcc-11-plugin-dev
+mkdir odb-build && cd odb-build
+bpkg create -d odb-gcc-N cc config.cxx=g++ config.cc.coptions=-O3 config.bin.rpath=/usr/lib config.install.root=/usr/ config.install.sudo=sudo
+cd odb-gcc-N
+bpkg build odb@https://pkg.cppget.org/1/beta
+bpkg test odb
+bpkg install odb
+# 若 odb 未找到，添加路径
+sudo echo 'export PATH=${PATH}:/usr/local/bin' >> ~/.bashrc
+export PATH=${PATH}:/usr/local/bin
+odb --version
+```
+安装 ODB 运行时库：
+```bash
+cd ..
+bpkg create -d libodb-gcc-N cc config.cxx=g++ config.cc.coptions=-O3 config.install.root=/usr/ config.install.sudo=sudo
+cd libodb-gcc-N
+bpkg add https://pkg.cppget.org/1/beta
+bpkg fetch
+bpkg build libodb
+bpkg build libodb-mysql
+bpkg build libodb-boost
+bpkg install --all --recursive
+```
+
+---
+
+#### MySQL 安装与配置
+安装 MySQL 及开发包：
+```bash
+sudo apt install mysql-server
+sudo apt install -y libmysqlclient-dev
+```
+配置字符集与远程访问：
+编辑 `/etc/my.cnf` 或 `/etc/mysql/my.cnf`，添加：
+```
+[client]
+default-character-set=utf8
+[mysql]
+default-character-set=utf8
+[mysqld]
+character-set-server=utf8
+bind-address = 0.0.0.0
+```
+修改 root 密码：
+```bash
+sudo cat /etc/mysql/debian.cnf
+sudo mysql -u debian-sys-maint -p
+# 输入上一步看到的密码
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'xxxxxx';
+FLUSH PRIVILEGES;
+quit
+```
+重启并设置开机启动：
+```bash
+sudo systemctl restart mysql
+sudo systemctl enable mysql
+```
+
+---
+
+#### RabbitMQ 安装与配置
+安装 RabbitMQ：
+```bash
+sudo apt install rabbitmq-server
+sudo systemctl start rabbitmq-server
+sudo systemctl status rabbitmq-server
+```
+创建管理员用户（远程登录及消息发布订阅）：
+```bash
+sudo rabbitmqctl add_user root 123456
+sudo rabbitmqctl set_user_tags root administrator
+sudo rabbitmqctl set_permissions -p / root "." "." ".*"
+sudo rabbitmq-plugins enable rabbitmq_management
+```
+访问 Web 管理界面，默认端口为 15672。
+
+安装客户端 SDK：
+```bash
+sudo apt-get install librabbitmq-dev
+git clone https://github.com/CopernicaMarketingSoftware/AMQP-CPP.git
+cd AMQP-CPP/
+mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+make && sudo make install
+sudo apt install libev-dev
+```
 如需更详细的接口说明、数据库结构设计或具体技术实现细节，可参见项目源码或联系开发团队。
